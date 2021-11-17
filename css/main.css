@@ -1,0 +1,63 @@
+@import url("./form.css");
+@import url("./result.css");
+
+:root {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan20: hsl(186, 14%, 43%);
+  --dark-grayish-cyan10: hsl(184, 14%, 56%);
+  --light-grayish-cyan20: hsl(185, 41%, 84%);
+  --light-grayish-cyan10: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--light-grayish-cyan20);
+}
+
+.header {
+  text-align: center;
+  padding: 50px 0 40px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 500px;
+  padding: 32px;
+  background: var(--white);
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.footer {
+  padding: 15px 0;
+  font-size: 11px;
+  text-align: center;
+}
+.footer a {
+  color: hsl(228, 45%, 44%);
+}

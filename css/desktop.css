@@ -1,0 +1,48 @@
+body {
+  justify-content: space-evenly;
+}
+
+.header {
+  padding: 0;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 920px;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/* FORM */
+
+.form {
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.form__selects {
+  gap: 14px;
+}
+
+.form__selects .form__button {
+  width: calc(33.33% - 9.33px);
+}
+
+.form__selects .form__input {
+  width: calc(33% - 38.33px);
+  padding: 9px 13px;
+}
+
+/* RESULT */
+.result {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  gap: 32px;
+}
+
+.result__amount {
+  font-size: 50px;
+  letter-spacing: -0.045em;
+}
