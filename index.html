@@ -34,7 +34,7 @@
     </header>
     <main class="calculator">
       <div class="form calculator__form">
-        <label class="form__field" for="input-bill">
+        <div class="form__field">
           <span class="form__input-name">Bill</span>
           <div class="form__input-group">
             <img
@@ -50,8 +50,8 @@
               id="input-bill"
             />
           </div>
-        </label>
-        <label class="form__field" for="input-tip">
+        </div>
+        <div class="form__field">
           <span class="form__input-name">Select Tip</span>
           <div class="form__selects">
             <button class="form__button" onclick="selectTip(this, 5)">
@@ -70,7 +70,6 @@
               50%
             </button>
             <input
-              itemid="input-tip"
               class="form__input"
               type="number"
               id="input-tip"
@@ -78,8 +77,8 @@
               placeholder="Custom"
             />
           </div>
-        </label>
-        <label class="form__field" for="input-people">
+        </div>
+        <div class="form__field">
           <span class="form__input-name">Number of People</span>
           <div class="form__input-group">
             <img
@@ -96,7 +95,7 @@
               id="input-people"
             />
           </div>
-        </label>
+        </div>
       </div>
       <div class="result calculator__result">
         <div class="result__group">
