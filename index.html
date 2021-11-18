@@ -35,7 +35,7 @@
     <main class="calculator">
       <div class="form calculator__form">
         <div class="form__field">
-          <span class="form__input-name">Bill</span>
+          <span id="input-bill-label" class="form__input-name">Bill</span>
           <div class="form__input-group">
             <img
               class="form__icon"
@@ -46,14 +46,14 @@
               id="input-bill"
               class="form__input"
               type="number"
-              aria-label="Input the amount of the bill"
+              aria-labelledby="input-bill-label"
               min="0"
               placeholder="0.00"
             />
           </div>
         </div>
         <div class="form__field">
-          <span class="form__input-name">Select Tip</span>
+          <span id="input-tip-label" class="form__input-name">Select Tip</span>
           <div class="form__selects">
             <button class="form__button" onclick="selectTip(this, 5)">
               5%
@@ -74,14 +74,16 @@
               id="input-tip"
               class="form__input"
               type="number"
-              aria-label="Input the amount of the tip"
+              aria-labelledby="input-tip-label"
               min="0"
               placeholder="Custom"
             />
           </div>
         </div>
         <div class="form__field">
-          <span class="form__input-name">Number of People</span>
+          <span id="input-people-label" class="form__input-name"
+            >Number of People</span
+          >
           <div class="form__input-group">
             <img
               class="form__icon"
@@ -92,7 +94,7 @@
               id="input-people"
               class="form__input"
               type="number"
-              aria-label="Input number of person that pay the bill"
+              aria-labelledby="input-people-label"
               min="1"
               step="1"
               value="1"
